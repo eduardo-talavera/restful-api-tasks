@@ -11,7 +11,7 @@
 - run `npm install` to install all dependencies
 - rename the .env.example file to .env and set the variables as needed
 
-## file vars.env
+## file .env
 
 Example:
 
@@ -19,7 +19,7 @@ Example:
 
   HOST=localhost
   HOST_DB=localhost
-  PORT=5000
+  PORT=4000
   PORT_DB=5432
   USER_DB=postgres
   PASSWORD_DB=your_pass
@@ -42,4 +42,4 @@ Example:
 
 To clone or download the Frontend click on the following link 
 <br>
-<a href="https://github.com/eduardo-talavera/todo-list-app-client">Todo List Client</a>
+<a href="https://github.com/eduardo-talavera/react-webpack-task-app">React Webpack Tasks App</a>
