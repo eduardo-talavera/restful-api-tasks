@@ -5,8 +5,11 @@ exports.createTodo = async (req, res) => {
   const { userId } = req.params;
   const todo = {...req.body, userId};
   try {
-    await Todo.create(todo);
-    res.json({ msg: "the todo has been created successfully" });
+    const newTodo = await Todo.create(todo);
+    res.json({
+       msg: "the todo has been created successfully",
+       data: newTodo
+    });
   } catch (error) {
     console.log(error);
     return res.status(400).json({
@@ -66,18 +69,23 @@ exports.changeStateTodo = async (req, res) => {
 };
 
 exports.updateTodo = async (req, res) => {
-  const { id, userId } = req.params;
-  const { title, description, completed } = req.body;
+  const { id } = req.params;
+  const { title, description , updatedBy} = req.body;
+
   try {
     // update todo
     await Todo.update(
-      { updatedByUserId: userId, title, description, completed },
+      { updatedBy , title, description },
       {
         where: { id },
       }
     );
+
+    const todoUpdated = await Todo.findOne({where: { id }})
+   
     res.json({
       msg: "The todo has been update successfully",
+      data: todoUpdated
     });
   } catch (error) {
     console.log(error);

@@ -10,8 +10,8 @@ const Todo = db.define(
       primaryKey: true,
       autoIncrement: true,
     },
-    updatedByUserId: {
-      type: DataTypes.INTEGER,
+    updatedBy: {
+      type: DataTypes.STRING,
     },
     userAssignedId: {
       type: DataTypes.INTEGER,
