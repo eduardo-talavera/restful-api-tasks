@@ -45,12 +45,6 @@ const User = db.define('user', {
     },
     role: {
       type: DataTypes.STRING(60),
-      allowNull: false,
-      validate: {
-          notEmpty: {
-              msg: 'The role is required'
-          }
-      }
     } 
 }, {
     hooks: {

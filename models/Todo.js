@@ -26,13 +26,7 @@ const Todo = db.define(
       }
     },
     description: {
-      type: DataTypes.STRING(300),
-      allowNull: false,
-      validate: {
-        notEmpty: {
-          msg: "the description can not be empty",
-        }
-      },
+      type: DataTypes.STRING(300)
     },
     completed: {
       type: DataTypes.BOOLEAN,
