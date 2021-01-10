@@ -29,7 +29,7 @@ router.post("/todos/:userId", requireSignin, isAuth, addTodoValidator, createTod
 router.patch("/todos/:id/:userId", requireSignin, isAuth, changeStateTodo);
 
 // update a todo
-router.put("/todos/:id/:userId", requireSignin, isAuth, updateTodo);
+router.put("/todos/:id/:userId", requireSignin, isAuth, addTodoValidator, updateTodo);
 
 // delete a todo
 router.delete("/todos/:id/:userId", requireSignin, isAuth, removeTodo);
