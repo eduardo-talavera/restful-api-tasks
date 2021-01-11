@@ -38,6 +38,8 @@ exports.userSigninValidator = (req, res, next) => {
 
 exports.addTodoValidator = (req, res, next) => {
   req.check("title", "Title is required").notEmpty();
+  req.check("description", "the description cannot contain more than 300 characters")
+  .isLength({ max: 300 })
  
   const errors = req.validationErrors();
   if (errors) {

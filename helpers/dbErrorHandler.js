@@ -4,7 +4,7 @@ exports.errorHandler = (error) => {
   if (error.parent) {
     switch (error.parent.code) {
       case "23505":
-        message = "the email already exists";
+        message = "this register already exists";
         break;
       default:
         message = "Something went wrong";
