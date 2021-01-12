@@ -42,4 +42,4 @@ Example:
 
 To clone or download the Frontend click on the following link 
 <br>
-<a href="https://github.com/eduardo-talavera/react-webpack-task-app">React Webpack Tasks App</a>
+<a href="https://github.com/eduardo-talavera/react-webpack-tasks-app">React Webpack Tasks App</a>
