@@ -1,4 +1,4 @@
-# RESTful API Tasks JWT
+# RESTful API Tasks
 
 ## Minimum requirements 📄
 - Node >= 12.8
