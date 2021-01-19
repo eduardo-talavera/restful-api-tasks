@@ -55,7 +55,7 @@ exports.changeStateTodo = async (req, res) => {
     }
     todo.completed = state;
 
-    const todoCompleted = await todo.save(); //saving the state at db
+    await todo.save(); //saving the state at db
 
     res.json({
       msg: "The todo has been changed successfully",
@@ -70,7 +70,7 @@ exports.changeStateTodo = async (req, res) => {
 
 exports.updateTodo = async (req, res) => {
   const { id } = req.params;
-  const { title, description , updatedBy} = req.body;
+  const { title, description, updatedBy } = req.body;
 
   try {
     // update todo

@@ -6,7 +6,7 @@ const { errorHandler } = require('../helpers/dbErrorHandler');
 
 exports.signup = async (req, res) => {
 
-    const { name, email, password, role, } = req.body;
+    const { name, email, password, role } = req.body;
 
     try {
 

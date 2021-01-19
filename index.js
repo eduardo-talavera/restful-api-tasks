@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 const db = require("./config/db");
+require('dotenv').config(); 
+
 // require routes
 const todo = require("./routes/todo");
 const user = require("./routes/user");
