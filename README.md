@@ -26,6 +26,7 @@ Example:
   USER_DB=postgres
   PASSWORD_DB=your_pass
   DATABASE=tasks_db
+  JWT_SECRET=secret
 ```
 
 ## create the database in postgre
