@@ -24,6 +24,7 @@ Example:
   USER_DB=postgres
   PASSWORD_DB=your_pass
   DATABASE=tasks_db
+  DB_ENABLE_SSL=false // in producction this should be true
 ```
 
 ## create the database in postgre
