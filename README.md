@@ -1,4 +1,6 @@
+
 # Taskapi Server
+
 
 ## Minimum requirements 📄
 - Node >= 12.8
@@ -24,7 +26,7 @@ Example:
   USER_DB=postgres
   PASSWORD_DB=your_pass
   DATABASE=tasks_db
-  DB_ENABLE_SSL=false // in producction this should be true
+  DB_ENABLE_SSL=false // in production this should be true
 ```
 
 ## create the database in postgre
